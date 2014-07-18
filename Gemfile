@@ -51,6 +51,9 @@ gem 'bootstrap-sass-extras'
 gem 'tzinfo-data'
 gem 'validates_formatting_of'
 
+# NewRelic for app performance and exception monitoring
+gem 'newrelic_rpm'
+
 # Unicorn instead of the default webrat server
 gem 'unicorn'
 
