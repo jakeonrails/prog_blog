@@ -1,8 +1,13 @@
-%h1 The Easiest Blog Tool for Programmers
-%p Start your programming blog today for free
-%h2 Features
-%ul
-  %li Use what you already know - Github Flavored Markdown - to format your source code snippets
-  %li Don't worry about design - we provide a beautiful selection of templates to make your blog look great
-  %li It's 100% free to use!
-  %li Run your blog on your own domain
+.row
+  .col-md-6
+    = image_tag "progblog-cropped.png", style: 'width: 100%'
+  .col-md-6
+    %h1 The Easiest Blog Tool for Programmers
+    %p Start your programming blog today for free
+    %h2 Features
+    %ul
+      %li Use what you already know - Github Flavored Markdown - to format your source code snippets
+      %li Don't worry about design - we provide a beautiful selection of templates to make your blog look great
+      %li It's 100% free to use!
+      %li Run your blog on your own domain
+      %li= link_to "Sign Up", new_user_registration_path, class: 'btn btn-primary'
