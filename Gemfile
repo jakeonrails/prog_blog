@@ -51,6 +51,9 @@ gem 'bootstrap-sass-extras'
 gem 'tzinfo-data'
 gem 'validates_formatting_of'
 
+# Unicorn instead of the default webrat server
+gem 'unicorn'
+
 # Github API
 gem 'octokit'
 
