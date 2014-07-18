@@ -7,7 +7,7 @@ class Post < ActiveRecord::Base
   after_commit :convert_markdown, on: [:update, :create]
 
   def convert_markdown
-    ConvertMarkdown.new.perform(id)
+    ConvertMarkdown.new.perform(id) if markdown_changed?
   end
 
   def published?
