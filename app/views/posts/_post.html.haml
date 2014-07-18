@@ -1,0 +1,13 @@
+%li
+  = content_tag_for :div, post do
+    = link_to post.title, edit_post_path(post)
+    %small
+      - if post.published?
+        published
+        = time_ago_in_words post.published_at
+        ago
+      - else
+        created
+        = time_ago_in_words post.created_at
+        ago
+

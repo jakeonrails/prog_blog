@@ -1,0 +1,22 @@
+= form_for @post, :html => { :class => 'form-horizontal form-model' } do |f|
+  .form-group
+    = f.label :title, :class => 'control-label col-md-2'
+    .col-md-10
+      = f.text_field :title, :class => 'text-field form-control'
+  .form-group
+    = f.label :markdown, :class => 'control-label col-md-2'
+    .col-md-10
+      = f.text_area :markdown, :class => 'text-field form-control'
+  .form-group
+    = f.label :html, :class => 'control-label col-md-2'
+    .col-md-10
+      = f.text_area :html, :class => 'text-field form-control'
+  .form-group
+    = f.label :published_at, :class => 'control-label col-md-2'
+    .col-md-10
+      = f.datetime_select :published_at, :class => 'text-field form-control'
+  .form-group
+    .col-md-offset-2.col-md-10
+      = f.submit nil, :class => 'btn btn-primary'
+      = link_to t('.cancel', :default => t("helpers.links.cancel")), |
+        posts_path, :class => 'btn btn-default'                      |
