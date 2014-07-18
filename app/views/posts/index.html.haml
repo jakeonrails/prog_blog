@@ -15,4 +15,4 @@
       - if post.draft?
         = render post
 
-= link_to t('.new', default: t("helpers.links.new")), new_post_path, class: 'btn btn-primary'
+= link_to t('.new', default: t("helpers.links.new")), new_user_post_path(@user), class: 'btn btn-primary'

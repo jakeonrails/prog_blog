@@ -54,6 +54,9 @@ gem 'validates_formatting_of'
 # Github API
 gem 'octokit'
 
+# User friendly URLS (/jakeonrails/my-first-blog-post)
+gem 'friendly_id', '~> 5.0.0'
+
 group :development, :test do
   gem 'rspec-rails'
   gem 'factory_girl_rails'
