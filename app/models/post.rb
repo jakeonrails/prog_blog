@@ -4,6 +4,12 @@ class Post < ActiveRecord::Base
 
   belongs_to :user
 
+  after_commit :convert_markdown, on: [:update, :create]
+
+  def convert_markdown
+    ConvertMarkdown.new.perform(id)
+  end
+
   def published?
     published_at.present?
   end
