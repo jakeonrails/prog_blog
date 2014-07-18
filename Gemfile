@@ -51,6 +51,9 @@ gem 'bootstrap-sass-extras'
 gem 'tzinfo-data'
 gem 'validates_formatting_of'
 
+# Github API
+gem 'octokit'
+
 group :development, :test do
   gem 'rspec-rails'
   gem 'factory_girl_rails'
