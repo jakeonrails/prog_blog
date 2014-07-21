@@ -4,7 +4,7 @@ class Post < ActiveRecord::Base
 
   belongs_to :user
 
-  after_commit :convert_markdown, on: [:update, :create]
+  after_save :convert_markdown
 
   def convert_markdown
     ConvertMarkdown.new.perform(id) if markdown_changed?
