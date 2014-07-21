@@ -2,5 +2,5 @@
   %h1= @post.title
 
 %article
-  = preserve @post.html.to_s.html_safe
+  != preserve @post.html.to_s
 
