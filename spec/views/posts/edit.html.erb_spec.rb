@@ -1,12 +1,12 @@
 require 'rails_helper'
 
-RSpec.describe "posts/edit", :type => :view do
+RSpec.describe "posts/edit", type: :view do
   before(:each) do
     @post = assign(:post, Post.create!(
-      :title => "MyString",
-      :markdown => "MyText",
-      :html => "MyText",
-      :user => nil
+      title: "MyString",
+      markdown: "MyText",
+      html: "MyText",
+      user: nil
     ))
   end
 

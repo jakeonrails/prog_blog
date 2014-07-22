@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe HomepageController, :type => :controller do
+RSpec.describe HomepageController, type: :controller do
 
   describe "GET 'index'" do
     it "returns http success" do

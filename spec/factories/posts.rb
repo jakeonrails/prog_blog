@@ -2,10 +2,10 @@
 
 FactoryGirl.define do
   factory :post do
-    title "MyString"
-    markdown "MyText"
-    html "MyText"
+    title        "MyString"
+    markdown     "MyText"
+    html         "MyText"
     published_at "2014-07-17 21:58:05"
-    user nil
+    user
   end
 end
